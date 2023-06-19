@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Fonte";
+    src: url(../design/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-family: "Fonte", Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-family: "Fonte";
+}
+
+#bloco {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    border-radius: 12px;
+
+    background-color: hsl(244, 38%, 16%);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.status {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nomenclaturas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#parteUM, #parteDOIS {
+    width: 50%;
+}
+
+#parteUM {
+    padding: 40px;
+    order: 1;
+}
+
+#parteDOIS {
+    background-color: black;
+    background-image: url(../images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    order: 2;
+}
+
+/* Ajustes */
+#bloco h1 {
+    padding: 40px 0;
+    font-size: 2.3em;
+}
+
+.texto {
+    color: hsla(0, 0%, 100%, 0.6);
+    padding-bottom: 50px;
+}
+
+.nomenclaturas {
+    font-size: .7em;
+    letter-spacing: 2px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+#parteUM p.texto {
+    line-height: 1.7;
+    text-align: start;
+}
+
+.destaque {
+    color: hsl(277, 64%, 61%);
+}
+
+/* media query */
+@media screen and (max-width: 700px) {
+    #bloco {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0;
+        /* margin-top: 100px;
+        margin-bottom: 100px !important; */
+    }
+
+    #parteUM, #parteDOIS {
+        width: 100%;
+    }
+
+    #parteUM {
+        order: 2;
+    }
+
+    #parteDOIS {
+        background-color: black;
+        background-image: url("../images/image-header-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        order: 1;
+        width: 100%;
+        min-height: 300px;
+    }    
+}
