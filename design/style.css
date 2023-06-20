@@ -21,7 +21,7 @@ body {
 #bloco {
     display: flex;
     flex-direction: row;
-    width: 900px;
+    width: 70%;
     border-radius: 12px;
 
     background-color: hsl(244, 38%, 16%);
@@ -65,10 +65,21 @@ body {
     order: 2;
 }
 
+#parteDOISb {
+    position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(277, 80%, 32%, 0.384);
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+}
+
 /* Ajustes */
 #bloco h1 {
     padding: 40px 0;
-    font-size: 2.3em;
+    font-size: 2.2em;
 }
 
 .texto {
@@ -92,7 +103,7 @@ body {
 }
 
 /* media query */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
     #bloco {
         width: 80%;
         display: flex;
@@ -121,5 +132,46 @@ body {
         order: 1;
         width: 100%;
         min-height: 300px;
-    }    
+    }
+    
+    #parteDOISb {
+        position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 300px;
+            background-color: hsla(277, 80%, 32%, 0.384);
+    }
+
+    #bloco {
+        margin: 100px 0;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 860px) {
+    .nomenclaturas {
+        font-size: .5em;
+    }
+
+    .status {
+        font-size: .7em;
+    }
+
+    #bloco {
+        margin: 100px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nomenclaturas {
+        font-size: .5em;
+    }
+
+    .status {
+        font-size: .7em;
+    }
+
+    #bloco {
+        margin: 100px 0;
+    }
 }
