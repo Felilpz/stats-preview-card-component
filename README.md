@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solução FEM](https://your-solution-url.com)
+- Solution URL: [Solução FEM](https://www.frontendmentor.io/solutions/state-preview-card-componente-challenge-solved-uf86WuYYUI)
 - Live Site URL: [Github](https://felilpz.github.io/stats-preview-card-component/)
 
 ## My process
@@ -53,7 +53,7 @@ Durante este projeto, aprendi vários conceitos e técnicas importantes. Aqui es
 </div>
 ```
 
-```html
+```css
 @media screen and (max-width: 900px) {
     /* Estilos para telas menores que 900px */
 }
