@@ -115,6 +115,7 @@ body {
     #bloco {
         display: flex;
         flex-direction: column;
+        /* width: 85vw; */
     }
 
     #parteUM, #parteDOIS {
@@ -123,6 +124,11 @@ body {
 
     #parteUM {
         order: 2;
+        padding: 10px;
+    }
+
+    p.texto {
+        font-size: 1em;
     }
 
     #parteDOIS {
@@ -168,5 +174,9 @@ body {
     #bloco h1 {
         font-size: 1.5em;
         text-align: center;
+    }
+
+    #bloco {
+        width: 85vw;
     }
 }
